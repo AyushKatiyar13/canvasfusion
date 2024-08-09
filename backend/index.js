@@ -9,7 +9,7 @@ app.use(express.json());
 const allowedOrigins = [
   "https://main--collaoboard.netlify.app",
   "https://collaoboard.netlify.app",
-  "http://localhost:5173",
+  "http://localhost:5175"
 ];
 app.use(
   cors({
@@ -18,6 +18,14 @@ app.use(
     credentials: true,
   })
 );
+
+// app.use(
+//   cors({
+//     origin: ["http://localhost:5173"],
+//     methods: ["GET", "POST"],
+//     credentials: true,
+//   })
+// );
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {

@@ -9,7 +9,7 @@ const CreateSessionButton = () => {
     try {
       console.log("helo");
       const response = await fetch(
-        "https://collab-whiteboard-5uu2.onrender.com/create-session",
+        "http://localhost:3000/create-session",
         {
           method: "POST",
         }
