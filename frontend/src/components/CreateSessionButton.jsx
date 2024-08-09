@@ -9,7 +9,8 @@ const CreateSessionButton = () => {
     try {
       console.log("helo");
       const response = await fetch(
-        "http://localhost:3000/create-session",
+        // "http://localhost:3000/create-session",
+        "https://whiteboard-repo.onrender.com/create-session",
         {
           method: "POST",
         }

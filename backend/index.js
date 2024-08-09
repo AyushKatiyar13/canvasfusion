@@ -7,8 +7,10 @@ import { v4 as uuidv4 } from "uuid";
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-  "https://main--collaoboard.netlify.app",
-  "https://collaoboard.netlify.app",
+  // "https://main--collaoboard.netlify.app",
+  "https://main--66b5e4093bacca3ab8bb78f2--subtle-cannoli-bf96a4.netlify.app/",
+  // "https://collaoboard.netlify.app",
+  "https://66b5e4093bacca3ab8bb78f2--subtle-cannoli-bf96a4.netlify.app/",
   "http://localhost:5175"
 ];
 app.use(
