@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useParams } from "react-router-dom";
 
 const socket = io("https://whiteboard-repo.onrender.com", {
-  withCredentials: true, // Include credentials (e.g., cookies) with the request if needed
+  withCredentials: true,
 });
 
 const CanvasDrawing = () => {

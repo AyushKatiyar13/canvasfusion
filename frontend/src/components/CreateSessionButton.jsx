@@ -1,7 +1,6 @@
 // CreateSessionButton.js
 import { useState } from "react";
 
-
 const CreateSessionButton = () => {
   const [sessionUrl, setSessionUrl] = useState("");
   console.log(window.location.origin);
@@ -10,7 +9,6 @@ const CreateSessionButton = () => {
     try {
       console.log("helo");
       const response = await fetch(
-        // "http://localhost:3000/create-session",
         "https://whiteboard-repo.onrender.com/create-session",
         {
           method: "POST",
