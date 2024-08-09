@@ -4,15 +4,12 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import { v4 as uuidv4 } from "uuid";
 
-
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-  // "https://main--collaoboard.netlify.app",
-  "https://main--https://subtle-cannoli-bf96a4.netlify.app/",
-  // "https://collaoboard.netlify.app",
-  "https://https://subtle-cannoli-bf96a4.netlify.app/",
-  "http://localhost:5175"
+  "https://main--subtle-cannoli-bf96a4.netlify.app",
+  "https://subtle-cannoli-bf96a4.netlify.app",
+  "http://localhost:5175",
 ];
 app.use(
   cors({
