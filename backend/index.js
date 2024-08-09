@@ -7,8 +7,8 @@ import { v4 as uuidv4 } from "uuid";
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-  "https://main--classy-scone-660e0c.netlify.app/",
-  "https://classy-scone-660e0c.netlify.app/",
+  "https://main--classy-scone-660e0c.netlify.app",
+  "https://classy-scone-660e0c.netlify.app", 
   "http://localhost:5175",
 ];  
 
@@ -20,13 +20,7 @@ app.use(
   })
 );
 
-// app.use(
-//   cors({
-//     origin: ["http://localhost:5173"],
-//     methods: ["GET", "POST"],
-//     credentials: true,
-//   })
-// );
+ 
 
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
