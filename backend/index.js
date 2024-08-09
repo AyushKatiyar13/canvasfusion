@@ -7,8 +7,8 @@ import { v4 as uuidv4 } from "uuid";
 const app = express();
 app.use(express.json());
 const allowedOrigins = [
-  "https://main--classy-scone-660e0c.netlify.app",
-  "https://classy-scone-660e0c.netlify.app", 
+  "https://main--66b65b50e24d813bf10797d0--canvasfusion.netlify.app",
+  "https://66b65b50e24d813bf10797d0--canvasfusion.netlify.app", 
   "http://localhost:5175",
 ];  
 
