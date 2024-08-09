@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import io from "socket.io-client";
 import { useParams } from "react-router-dom";
 
-const socket = io("https://whiteboard-repo1.onrender.com", {
+const socket = io("https://whiteboard-bdhy.onrender.com", {
   withCredentials: true,
 });
 

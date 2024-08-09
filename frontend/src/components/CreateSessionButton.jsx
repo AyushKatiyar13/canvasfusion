@@ -9,7 +9,7 @@ const CreateSessionButton = () => {
     try {
       console.log("helo");
       const response = await fetch(
-        "https://whiteboard-repo1.onrender.com",
+        "https://whiteboard-bdhy.onrender.com",
         {
           method: "POST",
         }
